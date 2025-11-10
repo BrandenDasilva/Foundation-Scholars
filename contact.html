@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Foundation Scholars at Western Michigan University">
+    <title>Contact - Foundation Scholars</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <h1>Foundation Scholars</h1>
+                    <p class="university-name">Western Michigan University</p>
+                </div>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="network.html">Network</a></li>
+                    <li><a href="newsletter.html">Newsletter</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <p>We'd love to hear from you</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form-section">
+                        <h3>Send Us a Message</h3>
+                        <p>Whether you're a current scholar, alumnus, or interested in learning more about the program, we're here to help.</p>
+                        
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required class="form-input">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required class="form-input">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="affiliation">Your Affiliation</label>
+                                <select id="affiliation" name="affiliation" class="form-select">
+                                    <option value="">Select...</option>
+                                    <option value="current">Current Scholar</option>
+                                    <option value="alumni">Alumni</option>
+                                    <option value="prospective">Prospective Scholar</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <input type="text" id="subject" name="subject" required class="form-input">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" required class="form-textarea"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                        
+                        <div id="contactMessage" class="form-message"></div>
+                    </div>
+                    
+                    <div class="contact-info-section">
+                        <h3>Contact Information</h3>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <h4>📍 Location</h4>
+                                <p>Western Michigan University<br>
+                                Kalamazoo, MI 49008</p>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <h4>📧 Email</h4>
+                                <p>foundation.scholars@wmich.edu</p>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <h4>🕒 Office Hours</h4>
+                                <p>Monday - Friday<br>
+                                9:00 AM - 5:00 PM EST</p>
+                            </div>
+                        </div>
+                        
+                        <div class="quick-links-box">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="about.html">Learn About the Program</a></li>
+                                <li><a href="network.html">Join the Network</a></li>
+                                <li><a href="newsletter.html">Subscribe to Newsletter</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="faq-section">
+                            <h4>Frequently Asked Questions</h4>
+                            <div class="faq-item">
+                                <strong>How do I join the alumni network?</strong>
+                                <p>Visit our <a href="network.html">Network page</a> or contact us directly to get connected.</p>
+                            </div>
+                            <div class="faq-item">
+                                <strong>Can I update my profile information?</strong>
+                                <p>Yes! Send us your updated information and we'll make sure your profile is current.</p>
+                            </div>
+                            <div class="faq-item">
+                                <strong>How can I become a mentor?</strong>
+                                <p>We'd love to have you! Fill out the contact form indicating your interest in mentorship.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Foundation Scholars</h3>
+                    <p>Western Michigan University</p>
+                    <p>Kalamazoo, MI 49008</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="network.html">Network</a></li>
+                        <li><a href="newsletter.html">Newsletter</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <p>Stay updated on the latest news and events</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Foundation Scholars - Western Michigan University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/contact.js"></script>
+</body>
+</html>

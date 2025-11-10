@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Connect with Foundation Scholars current students and alumni">
+    <title>Network - Foundation Scholars</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <h1>Foundation Scholars</h1>
+                    <p class="university-name">Western Michigan University</p>
+                </div>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="network.html" class="active">Network</a></li>
+                    <li><a href="newsletter.html">Newsletter</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Scholar Network</h2>
+                <p>Connect with current students and accomplished alumni</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="network-intro">
+                    <h3>Welcome to Our Community</h3>
+                    <p>
+                        The Foundation Scholars network is a vibrant community of current students and alumni 
+                        who share a commitment to excellence, leadership, and service. Whether you're seeking 
+                        mentorship, looking to give back, or simply want to stay connected with fellow scholars, 
+                        this is your hub for meaningful connections.
+                    </p>
+                </div>
+
+                <div class="network-categories">
+                    <h3>Connect By Category</h3>
+                    <div class="category-grid">
+                        <div class="category-card">
+                            <div class="category-icon">👨‍🎓</div>
+                            <h4>Current Scholars</h4>
+                            <p>Connect with fellow students in the program, share experiences, and build lasting friendships.</p>
+                            <button class="btn btn-secondary" onclick="showCategory('current')">View Scholars</button>
+                        </div>
+                        <div class="category-card">
+                            <div class="category-icon">🎓</div>
+                            <h4>Alumni Network</h4>
+                            <p>Engage with graduates making their mark in various fields and industries.</p>
+                            <button class="btn btn-secondary" onclick="showCategory('alumni')">View Alumni</button>
+                        </div>
+                        <div class="category-card">
+                            <div class="category-icon">👥</div>
+                            <h4>Mentorship Program</h4>
+                            <p>Connect mentors with mentees for guidance, support, and professional development.</p>
+                            <button class="btn btn-secondary" onclick="showCategory('mentorship')">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-features">
+                    <h3>Networking Opportunities</h3>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <h4>🌟 Annual Networking Events</h4>
+                            <p>Join us for our signature networking events held throughout the year, bringing together scholars from all cohorts.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>💼 Career Connections</h4>
+                            <p>Access job postings, internship opportunities, and career advice from alumni in your field of interest.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>🎯 Interest Groups</h4>
+                            <p>Join specialized groups based on majors, career interests, or hobbies to connect with like-minded scholars.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>📚 Study Groups</h4>
+                            <p>Form or join study groups with fellow scholars to collaborate on coursework and projects.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="member-directory">
+                    <h3>Member Directory</h3>
+                    <div class="search-section">
+                        <input type="text" id="searchInput" placeholder="Search by name, major, or class year..." class="search-input">
+                        <div class="filter-controls">
+                            <select id="classYearFilter" class="filter-select">
+                                <option value="">All Class Years</option>
+                                <option value="2025">Class of 2025</option>
+                                <option value="2024">Class of 2024</option>
+                                <option value="2023">Class of 2023</option>
+                                <option value="2022">Class of 2022</option>
+                                <option value="older">Earlier Classes</option>
+                            </select>
+                            <select id="statusFilter" class="filter-select">
+                                <option value="">All Members</option>
+                                <option value="current">Current Scholars</option>
+                                <option value="alumni">Alumni</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div id="memberList" class="member-grid">
+                        <div class="member-card">
+                            <div class="member-avatar">FS</div>
+                            <div class="member-info">
+                                <h4>Foundation Scholar</h4>
+                                <p class="member-title">Business Administration, Class of 2025</p>
+                                <p class="member-status">Current Scholar</p>
+                            </div>
+                        </div>
+                        <div class="info-message">
+                            <p>👋 This is a placeholder directory. As the community grows, member profiles will be added here.</p>
+                            <p>To be featured in the directory, please <a href="contact.html">contact us</a> with your information.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <h2>Join the Conversation</h2>
+                <p>Stay engaged with your fellow scholars and alumni.</p>
+                <a href="contact.html" class="btn btn-primary">Get Connected</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Foundation Scholars</h3>
+                    <p>Western Michigan University</p>
+                    <p>Kalamazoo, MI 49008</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="network.html">Network</a></li>
+                        <li><a href="newsletter.html">Newsletter</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <p>Stay updated on the latest news and events</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Foundation Scholars - Western Michigan University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/network.js"></script>
+</body>
+</html>
